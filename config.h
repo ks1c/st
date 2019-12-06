@@ -82,11 +82,43 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* GRUVBOX COLORSCHEME */
+/* DRACULA COLORSCHEME */
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
+	"#21222c", // dark0
+	"#ff5555", // red
+	"#50fa7b", // green
+	"#f1fa8c", // yellow
+	"#bd93f9", // blue
+	"#ff79c6", // purple
+	"#8be9fd", // aqua
+	"#f8f8f2", // light4
+
+	/* 8 bright colors */
+	"#6272a4", // gray
+	"#ff6e6e", // bright_red
+	"#69ff94", // bright_green
+	"#ffffa5", // bright_yellow
+	"#d6acff", // bright_blue
+	"#ff92df", // bright_purple
+	"#a4ffff", // faded_aqua
+	"#ffffff", // bright_light1
+};
+
+/*
+ * Default colors (colorname index)
+ * foreground, background, cursor, reverse cursor
+ */
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 7;
+static unsigned int defaultrcs = 0;
+
+/* GRUVBOX COLORSCHEME
+   static const char *colorname[] = {
+	//8 normal colors
 	"#282828", // dark0
 	"#cc241d", // red
 	"#98971a", // green
@@ -96,7 +128,7 @@ static const char *colorname[] = {
 	"#689d6a", // aqua
 	"#a89984", // light4
 
-	/* 8 bright colors */
+	// 8 bright colors
 	"#928374", // gray
 	"#fb4934", // bright_red
 	"#b8bb26", // bright_green
@@ -106,15 +138,11 @@ static const char *colorname[] = {
 	"#8ec07c", // faded_aqua
 	"#ebdbb2", // bright_light1
 };
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
 unsigned int defaultfg = 15;
 unsigned int defaultbg = 0;
 static unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 0;
+*/
 
 /*
  * Default shape of cursor
