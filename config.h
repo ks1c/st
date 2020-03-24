@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Inconsolata:size=17:antialias=true:autohint=true";
+static char *font = "Fira Code:size=14:antialias=true:autohint=true";
 static int borderpx = 1;
 
 /*
